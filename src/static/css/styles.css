@@ -1,0 +1,31 @@
+body {
+  text-align: center;
+  margin: auto;
+  font-family: Arial, sans-serif;
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+}
+
+a {
+  text-decoration: none;
+  font-family: Arial, sans-serif;
+}
+
+a:hover {
+  opacity: 65%;
+}
+
+a:visited {
+  color: inherit;
+}
+
+img {
+  display: block;
+  margin: auto;
+}
+
+.background-collage {
+  max-width: 90%;
+  margin-bottom: 4rem;
+}
