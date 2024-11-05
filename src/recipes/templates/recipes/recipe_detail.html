@@ -1,18 +1,11 @@
 {% load static %}
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <link rel="stylesheet" type="text/css" href="{% static 'css/styles.css' %}">
-    <title>ReciSpot</title>
+    <title>{{ recipe.name }}</title>
 </head>
 <body>
-    <h1>Welcome to ReciSpot!</h1>
-    <img class="background-collage" src="{% static 'images/recipe-collage-4.jpg' %}" alt="home">
-    <a href="{% url 'recipes' %}">Click Here to View All Recipes!</a>
-
-</body>
-</html>
+    <h1>{{ recipe.name }}</h1>
