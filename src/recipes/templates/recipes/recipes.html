@@ -14,9 +14,9 @@
     <h2>Here are all of our user-submitted recipes:</h2>
     <div>
         {% for recipe in recipes %}
-        <div class="recipe-img">
+        <div>
             <a href="{% url 'recipe_detail' recipe.id %}">
-                <img src="{{ recipe.pic.url }}" alt="{{ recipe.name }}">
+                <img class="recipe-img" src="{{ recipe.pic.url }}" alt="{{ recipe.name }}">
                 <h3>{{ recipe.name }}</h3>
             </a>
         </div>
