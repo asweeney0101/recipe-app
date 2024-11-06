@@ -10,6 +10,13 @@
 <body>
     <h1>{{ recipe.name }}</h1>
     <img class="recipe-img" src="{{ recipe.pic.url }}" alt="{{ recipe.name }}">
-    <p>{{ recipe.description }}</p>
+    <p>
+        Time: {{ recipe.cooking_time }} minutes<br>
+        Ingredients: {{ recipe.ingredients }}<br>
+        Difficulty: {{ recipe.difficulty }}<br>
+        <br>
+        {{ recipe.description }} <br>
+
+    </p>
 
 </body>
