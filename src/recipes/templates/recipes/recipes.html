@@ -10,7 +10,7 @@
 </head>
 <body>
     <h1>ReciSpot: All Recipes</h1>
-    <img src="{% static 'images/recipe-collage-1.jpg' %}" alt="home">
+    <img class="background-collage" src="{% static 'images/recipe-collage-1.jpg' %}" alt="home">
     <h2>Here are all of our user-submitted recipes:</h2>
     <div>
         {% for recipe in recipes %}
@@ -21,6 +21,3 @@
             </a>
         </div>
         {% endfor %}
-    </div>
-</body>
-</html>

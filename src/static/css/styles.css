@@ -2,10 +2,22 @@ body {
   text-align: center;
   margin: auto;
   font-family: Arial, sans-serif;
-  font-size: 1.5rem;
+  font-size: 1rem;
   margin-top: 50px;
   display: flex;
   flex-direction: column;
+}
+
+h1 {
+  font-size: 1.5rem;
+}
+
+h2 {
+  font-size: 1.25rem;
+}
+
+span {
+  font-weight: 700;
 }
 
 a {
@@ -32,6 +44,6 @@ img {
 }
 
 .recipe-img {
-  max-width: 500px;
+  max-width: 50%;
   margin-bottom: 4rem;
 }

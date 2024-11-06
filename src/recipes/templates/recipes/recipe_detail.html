@@ -11,9 +11,9 @@
     <h1>{{ recipe.name }}</h1>
     <img class="recipe-img" src="{{ recipe.pic.url }}" alt="{{ recipe.name }}">
     <p>
-        Time: {{ recipe.cooking_time }} minutes<br>
-        Ingredients: {{ recipe.ingredients }}<br>
-        Difficulty: {{ recipe.difficulty }}<br>
+        <span>Time:</span> {{ recipe.cooking_time }} minutes<br>
+        <span>Ingredients:</span> {{ recipe.ingredients }}<br>
+        <span>Difficulty:</span> {{ recipe.difficulty }}<br>
         <br>
         {{ recipe.description }} <br>
 
