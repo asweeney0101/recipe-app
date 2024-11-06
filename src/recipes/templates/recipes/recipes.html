@@ -5,7 +5,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <link rel="stylesheet" type="text/css" href="{% static 'css/styles.css' %}">
     <title>ReciSpot</title>
 </head>
@@ -17,7 +16,7 @@
         {% for recipe in recipes %}
         <div class="recipe-item">
             <a href="{% url 'recipe_detail' recipe.id %}">
-                <img src="{{ recipe.photo.url }}" alt="{{ recipe.name }}">
+                <img class="recipe-img" src="{{ recipe.pic.url }}" alt="{{ recipe.name }}">
                 <h3>{{ recipe.name }}</h3>
             </a>
         </div>

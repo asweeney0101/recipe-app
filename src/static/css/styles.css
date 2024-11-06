@@ -29,3 +29,8 @@ img {
   max-width: 90%;
   margin-bottom: 4rem;
 }
+
+.recipe-img {
+  max-width: 200px;
+  margin-bottom: 4rem;
+}
