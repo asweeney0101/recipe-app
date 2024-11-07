@@ -9,4 +9,7 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('', home, name='home'),
     path('recipes/', include('recipes.urls', namespace='recipes')),
-    path('login/', login_vie
+    path('login/', login_view, name='login'),
+]
+
+urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

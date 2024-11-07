@@ -18,4 +18,19 @@
             <div>
                 <div></div>
                 {% if error_message %}
-     
+                {{error_message}}
+                {% endif %}
+                <img class="background-collage" src="{% static 'images/recipe-collage-4.jpg' %}" alt="login-pic">
+                <form action="" method="POST">
+                    {% csrf_token %}
+                    {{form}}
+                    <div>
+                        <button type="submit">Submit</button>
+                    </div>
+                </form>
+
+            </div>
+        </div>
+    </div>
+</body>
+</html>

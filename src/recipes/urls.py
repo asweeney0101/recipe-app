@@ -5,4 +5,6 @@ app_name = 'recipes'
 
 urlpatterns = [
     path('', home, name='home'),
-    path('<int:id>/', recipe_detail, na
+    path('<int:id>/', recipe_detail, name='recipe_detail'),
+    path('list/', recipes, name='recipes_list'),
+]
