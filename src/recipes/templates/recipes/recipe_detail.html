@@ -8,6 +8,7 @@
     <title>{{ recipe.name }}</title>
 </head>
 <body>
+    <div class="logout-container"><a class="logout-button" href="{%url 'logout' %}"> Logout </a></div>
     <h1>{{ recipe.name }}</h1>
     <img class="recipe-img" src="{{ recipe.pic.url }}" alt="{{ recipe.name }}">
     <p>

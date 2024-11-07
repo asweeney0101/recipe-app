@@ -47,3 +47,14 @@ img {
   max-width: 50%;
   margin-bottom: 4rem;
 }
+
+.logout-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  padding-right: 20px;
+}
+
+.logout-button {
+  margin-right: 10%;
+}
