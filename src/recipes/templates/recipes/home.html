@@ -13,7 +13,7 @@
     <div class="logout-container"><a class="logout-button" href="{%url 'logout' %}"> Logout </a></div>
     <h1>Welcome to ReciSpot!</h1>
     <img class="background-collage" src="{% static 'images/recipe-collage-4.jpg' %}" alt="home">
-    <a href="{% url 'recipes:recipes_list' %}">Click Here to View All Recipes!</a>
+    <a class="view-recipes" href="{% url 'recipes:recipes_list' %}">Click Here to View All Recipes!</a>
 
 </body>
 </html>

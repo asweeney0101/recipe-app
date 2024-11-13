@@ -6,6 +6,7 @@ body {
   margin-top: 50px;
   display: flex;
   flex-direction: column;
+  padding-bottom: 5rem;
 }
 
 h1 {
