@@ -14,15 +14,9 @@
     <h1>Welcome to ReciSpot!</h1>
     <img class="background-collage" src="{% static 'images/recipe-collage-4.jpg' %}" alt="home">
     <h2><a class="view-recipes" href="{% url 'recipes:recipes_list' %}">Click Here to View All Recipes!</a></h2>
-    <p>or</p>
     <h3> Search for recipes </h3>
 
-    <hr>
-    <form action="" method="POST">
-        {% csrf_token %}
-        {{form}}
-        <button type="submit">Search</button>
 
-    </form>
+
 </body>
 </html>

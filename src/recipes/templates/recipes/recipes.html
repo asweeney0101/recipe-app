@@ -12,6 +12,16 @@
     <div class="logout-container"><a class="logout-button" href="{%url 'logout' %}"> Logout </a></div>
     <h1>ReciSpot: All Recipes</h1>
     <img class="background-collage" src="{% static 'images/recipe-collage-1.jpg' %}" alt="home">
+
+    <form action="" method="POST">
+        {% csrf_token %}
+        {{form}}
+        <button type="submit">Search</button>
+
+    </form>
+
+    <hr>
+
     <h2>Here are all of our user-submitted recipes:</h2>
     <div>
         {% for recipe in recipes %}
