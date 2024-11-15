@@ -8,7 +8,18 @@
     <title>{{ recipe.name }}</title>
 </head>
 <body>
-    <div class="logout-container"><a class="logout-button" href="{%url 'logout' %}"> Logout </a></div>
+    <div class="nav-bar-ajs">
+        <a href="{% url 'recipes:home' %}">
+            <div class="logo-div">
+                <img class="logo" src="{% static 'images/chef-hat.svg' %}" alt="logo">
+                <h1> ReciSpot</h1>
+            </div>
+        </a>
+
+        <a class="logout-button" href="{%url 'logout' %}">
+            <h2>Logout</h2>
+        </a>
+    </div>
     <h1>{{ recipe.name }}</h1>
     <img class="recipe-img" src="{{ recipe.pic.url }}" alt="{{ recipe.name }}">
     <p>

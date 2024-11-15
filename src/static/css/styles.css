@@ -3,7 +3,6 @@ body {
   margin: auto;
   font-family: Arial, sans-serif;
   font-size: 1rem;
-  margin-top: 50px;
   display: flex;
   flex-direction: column;
   padding-bottom: 5rem;
@@ -24,6 +23,7 @@ span {
 a {
   text-decoration: none;
   font-family: Arial, sans-serif;
+  color: inherit;
 }
 
 a:hover {
@@ -44,15 +44,25 @@ img {
   margin-bottom: 4rem;
 }
 
-.logout-container {
+.nav-bar-ajs {
   display: flex;
   flex-direction: row;
-  justify-content: flex-end;
-  padding-right: 20px;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(175, 225, 255);
+  height: 4rem;
+  padding-right: 1.5rem;
+  padding-left: 1.5rem;
+  margin-bottom: 1rem;
 }
 
-.logout-button {
-  margin-right: 10%;
+.logo-div {
+  display: flex;
+  flex-direction: row;
+}
+
+.logo {
+  width: 3rem;
 }
 
 .recipe-div {
