@@ -44,11 +44,6 @@ img {
   margin-bottom: 4rem;
 }
 
-.recipe-img {
-  max-width: 50%;
-  margin-bottom: 4rem;
-}
-
 .logout-container {
   display: flex;
   flex-direction: row;
@@ -58,4 +53,13 @@ img {
 
 .logout-button {
   margin-right: 10%;
+}
+
+.recipe-div {
+  margin-bottom: 4rem;
+}
+
+.recipe-img {
+  max-width: 50%;
+  margin: auto;
 }
