@@ -1,5 +1,6 @@
 from django.test import TestCase
 from recipes.models import Recipe
+from recipes.forms import RecipesSearchForm
 
 class RecipeModelTest(TestCase):
 
@@ -47,3 +48,15 @@ class RecipeModelTest(TestCase):
 
     def test_recipe_str(self):
         self.assertEqual(str(self.recipe), "Test Recipe")
+
+
+class RecipesSearchFormTest(TestCase):
+    def test_recipes_search_form_valid(self):
+        form_data = {'search_query': 'Test Ingredient'}
+        form = RecipesSearchForm(data=form_data)
+        self.assertTrue(form.is_valid())
+
+    def test_recipes_search_form_invalid(self):
+        form_data = {'search_query': ''}
+        form = RecipesSearchForm(data=form_data)
+        self.assertFalse(form.is_valid())
