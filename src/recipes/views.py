@@ -20,7 +20,18 @@ class RecipesListView(LoginRequiredMixin, ListView):
         context = super().get_context_data(**kwargs)
         context['form'] = RecipesSearchForm()
         return context
+    
+    def post(self, request, *args, **kwargs):
+        search_query = request.POST.get('search_query')
+        recipes = Recipe.objects.filter(name__icontains=search_query)
+        # context = super().get_context_data(**kwargs)
+        context = {}
+        context['form'] = RecipesSearchForm()
+        context['recipes'] = recipes
+        
+        return render(request, self.template_name, context)
 
+        
 
 class RecipeDetailView(LoginRequiredMixin, DetailView):
     model = Recipe
