@@ -1,3 +1,7 @@
+:root {
+  --background-nav-color: rgb(175, 225, 255);
+}
+
 body {
   text-align: center;
   margin: auto;
@@ -34,22 +38,12 @@ a:visited {
   color: inherit;
 }
 
-img {
-  display: block;
-  margin: auto;
-}
-
-.background-collage {
-  max-width: 90%;
-  margin-bottom: 4rem;
-}
-
 .nav-bar-ajs {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  background-color: rgb(175, 225, 255);
+  background-color: var(--background-nav-color);
   height: 4rem;
   padding-right: 1.5rem;
   padding-left: 1.5rem;
@@ -63,6 +57,39 @@ img {
 
 .logo {
   width: 3rem;
+}
+
+img {
+  display: block;
+  margin: auto;
+}
+
+.background-collage {
+  max-width: 90%;
+}
+
+.all-recipe-collage-div {
+  position: relative;
+  text-align: center;
+}
+
+.all-recipe-collage-div h1 {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-shadow: -1px -1px 0 var(--background-nav-color),
+    1px -1px 0 var(--background-nav-color),
+    -1px 1px 0 var(--background-nav-color),
+    1px 1px 0 var(--background-nav-color);
+}
+
+.background-collage2 {
+  max-width: 90%;
+}
+
+.view-recipes {
+  margin-top: 4rem;
 }
 
 .recipe-div {
