@@ -24,6 +24,10 @@
     <h1>ReciSpot: All Recipes</h1>
     <img class="background-collage" src="{% static 'images/recipe-collage-1.jpg' %}" alt="home">
 
+    <h2>Below are all of our user-submitted recipes:</h2>
+    <hr>
+    <hr>
+
     <form action="" method="POST">
         {% csrf_token %}
         {{form}}
@@ -34,8 +38,7 @@
     <hr>
     <hr>
 
-    <h2>Here are all of our user-submitted recipes:</h2>
-    <hr>
+
 
     <div>
         {% for recipe in recipes %}
