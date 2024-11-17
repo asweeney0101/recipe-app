@@ -34,4 +34,13 @@ class RecipesListView(LoginRequiredMixin, ListView):
 
 class RecipeCreateView(CreateView):
     model = Recipe
-    fields = ['name', 'cooking_time', 'ingredients', 'descripti
+    fields = ['name', 'cooking_time', 'ingredients', 'description', 'pic']
+    template_name = 'recipes/recipe_form.html'
+    success_url = '/recipes/' 
+
+
+
+class RecipeDetailView(LoginRequiredMixin, DetailView):
+    model = Recipe
+    template_name = 'recipes/recipe_detail.html'
+    context_object_name = 'recipe'
