@@ -1,5 +1,6 @@
 from django.shortcuts import render, get_object_or_404
 from django.views.generic import ListView, DetailView, TemplateView
+from django.views.generic.edit import CreateView
 from django.contrib.auth.mixins import LoginRequiredMixin
 from django.db.models import Q
 from .models import Recipe
@@ -31,8 +32,6 @@ class RecipesListView(LoginRequiredMixin, ListView):
         
         return render(request, self.template_name, context)
 
-        
-class RecipeDetailView(LoginRequiredMixin, DetailView):
+class RecipeCreateView(CreateView):
     model = Recipe
-    template_name = 'recipes/recipe_detail.html'
-    context_object_name = 'recipe'
+    fields = ['name', 'cooking_time', 'ingredients', 'descripti
